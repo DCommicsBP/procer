@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "cpf": "01078556075",
+    "email": "facilisis@hotmail.edu",
+    "firstName": "Ciara",
+    "lastName": "Stein",
+    "new": false,
+    "activated": true
+  },
+  {
+    "id": 2,
+    "cpf": "91173533001",
+    "email": "ipsum.dolor@outlook.ca",
+    "firstName": "Sara",
+    "lastName": "Volks",
+    "new": false,
+    "activated": true
+  },
+  {
+    "id": 4,
+    "cpf": "03500951082",
+    "email": "pellentesque.massa@outlook.ca",
+    "firstName": "Pedro",
+    "lastName": "Rabbit",
+    "new": false,
+    "activated": true
+  },
+  {
+    "id": 3,
+    "cpf": "33053656094",
+    "email": "dasasaa@aol.net",
+    "firstName": "Liara",
+    "lastName": "Assis",
+    "new": false,
+    "activated": true
+  },
+  {
+    "id": 5,
+    "cpf": "36858928006",
+    "email": "ipsum.non@google.ca",
+    "firstName": "Alina",
+    "lastName": "Pavan",
+    "new": false,
+    "activated": true
+  }
+]
