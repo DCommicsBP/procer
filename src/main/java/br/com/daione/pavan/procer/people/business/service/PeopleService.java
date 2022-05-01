@@ -16,5 +16,6 @@ public interface PeopleService {
     Flux<PeopleEntity> searchByLastName(String lastName);
     Flux<PeopleEntity> searchByActive(boolean isActive);
     Mono<Void> deleteById(Long id);
+    Mono<Long> count();
 
 }

@@ -146,5 +146,4 @@ class PeopleServiceImplTest {
 
         BDDMockito.verify(repository).save(peopleEntity);
     }
-
 }
