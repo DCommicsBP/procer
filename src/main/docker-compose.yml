@@ -1,0 +1,18 @@
+version: '3.6'
+services:
+  postgres:
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=teste
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - '5432:5432'
+    volumes:
+      - /var/lib/postgresql/data
+volumes:
+  postgres:
+    external: true
+networks:
+  mongo-compose-network:
+    driver: bridge
