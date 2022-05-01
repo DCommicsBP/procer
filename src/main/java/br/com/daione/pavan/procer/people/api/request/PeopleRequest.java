@@ -20,5 +20,5 @@ public class PeopleRequest {
     @NotNull(message = "Você deve informar se o registro estará ativo.")
     private boolean newIsActivated;
     @NotNull(message = "Você deve informar o sobrenome.")
-    private String newIslastName;
+    private String newIsLastName;
 }

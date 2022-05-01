@@ -14,7 +14,7 @@ public abstract class PeopleConverter {
                     .firstName(request.getNewFirstName())
                     .isNew(isNewFlag)
                     .isActivated(request.isNewIsActivated())
-                    .lastName(request.getNewIslastName())
+                    .lastName(request.getNewIsLastName())
                     .build();
     }
 

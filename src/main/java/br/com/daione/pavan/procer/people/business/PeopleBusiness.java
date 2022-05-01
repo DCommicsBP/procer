@@ -21,7 +21,6 @@ public class PeopleBusiness {
         PeopleEntity peopleEntity = PeopleConverter.requestToEntity(request, true);
         return service.create(peopleEntity)
                 .map(PeopleConverter::entityToResponse);
-
     }
 
     public Mono<Void> delete(Long id) {
@@ -38,9 +37,12 @@ public class PeopleBusiness {
                 .map(PeopleConverter::entityToResponse);
     }
 
-    public Mono<PeopleResponse> update(PeopleRequest request) {
+    public Mono<PeopleResponse> update(PeopleRequest request, Long id) {
+
+        Mono<PeopleEntity> peopleEntityMono = this.service.searchById(id);
         PeopleEntity peopleEntity = PeopleConverter.requestToEntity(request, false);
-        return service.create(peopleEntity)
+        return peopleEntityMono
+                .doOnSuccess(element -> service.create(peopleEntity))
                 .map(PeopleConverter::entityToResponse);
     }
 

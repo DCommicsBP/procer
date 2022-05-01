@@ -22,9 +22,10 @@ public class PeopleEntity implements Persistable<Long> {
     private String email;
     private String firstName;
     private boolean isActivated;
+    private String lastName;
+
     @Transient
     private boolean isNew;
-    private String lastName;
 
     @Transient
     @Override

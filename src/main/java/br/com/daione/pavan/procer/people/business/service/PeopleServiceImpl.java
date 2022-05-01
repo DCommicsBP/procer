@@ -2,6 +2,7 @@ package br.com.daione.pavan.procer.people.business.service;
 
 import br.com.daione.pavan.procer.people.infraestructure.entity.PeopleEntity;
 import br.com.daione.pavan.procer.people.infraestructure.repository.PeopleRepository;
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +12,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @Service
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class PeopleServiceImpl implements PeopleService{
 
     static Logger LOG = LoggerFactory.getLogger(PeopleServiceImpl.class);
@@ -93,5 +94,13 @@ public class PeopleServiceImpl implements PeopleService{
                 .doOnError(element-> {
             LOG.error("CAUSE: " + element.getCause().getLocalizedMessage(), element);
         });
+    }
+
+    @Override
+    public Mono<Long> count() {
+        return repository.count()
+                .doOnError(element-> {
+                    LOG.error("CAUSE: " + element.getCause().getLocalizedMessage(), element);
+                });
     }
 }
