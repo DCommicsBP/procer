@@ -44,4 +44,4 @@ Isso só é possível pois foi colocado nas configurações da aplicação um sc
 http://localhost:8080/webjars/swagger-ui/index.html
 
 Uma vez dentro da aplicação você poderá utilizá-la sem grandes problemas.
-partindo do princíp. 
+ 
