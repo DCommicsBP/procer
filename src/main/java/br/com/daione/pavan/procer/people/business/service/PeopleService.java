@@ -1,21 +1,30 @@
 package br.com.daione.pavan.procer.people.business.service;
 
-import br.com.daione.pavan.procer.people.infraestructure.entity.PeopleEntity;
-import org.springframework.data.domain.Pageable;
+import br.com.daione.pavan.procer.people.api.request.PeopleRequest;
+import br.com.daione.pavan.procer.people.api.response.PeopleResponse;
+import org.springframework.data.domain.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 public interface PeopleService {
-    Mono<PeopleEntity> create(PeopleEntity entity);
-    Mono<PeopleEntity> searchById(Long id);
-    Mono<PeopleEntity> searchByCpf(String cpf);
-    Mono<PeopleEntity> searchByEmail(String email);
-    Flux<PeopleEntity> searchAll();
-    Flux<PeopleEntity> searchPaginated(Pageable pageable);
-    Flux<PeopleEntity> searchByFirstName(String firstName);
-    Flux<PeopleEntity> searchByLastName(String lastName);
-    Flux<PeopleEntity> searchByActive(boolean isActive);
-    Mono<Void> deleteById(Long id);
-    Mono<Long> count();
 
+    Mono<PeopleResponse> create(PeopleRequest request);
+
+    Mono<Void> delete(Long id);
+
+    Flux<PeopleResponse> list();
+
+    Mono<PeopleResponse> findById(Long id);
+
+    Mono<PeopleResponse> update(PeopleRequest request, Long id);
+
+    Mono<PeopleResponse> findByCPf(String cpf);
+
+    Flux<PeopleResponse> findByFirstName(String firstName);
+
+    Flux<PeopleResponse>findByLastName(String lastName);
+
+    Flux<PeopleResponse> findByIsActivated(boolean isActivated);
+
+    Mono<Page<PeopleResponse>> fingByPaged(int page, int size);
 }

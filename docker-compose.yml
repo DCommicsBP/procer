@@ -15,5 +15,5 @@ volumes:
   postgres:
     external: true
 networks:
-  mongo-compose-network:
+  postgres-compose-network:
     driver: bridge
