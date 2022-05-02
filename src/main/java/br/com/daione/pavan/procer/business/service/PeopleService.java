@@ -1,7 +1,7 @@
-package br.com.daione.pavan.procer.people.business.service;
+package br.com.daione.pavan.procer.business.service;
 
-import br.com.daione.pavan.procer.people.api.request.PeopleRequest;
-import br.com.daione.pavan.procer.people.api.response.PeopleResponse;
+import br.com.daione.pavan.procer.api.request.PeopleRequest;
+import br.com.daione.pavan.procer.api.response.PeopleResponse;
 import org.springframework.data.domain.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;

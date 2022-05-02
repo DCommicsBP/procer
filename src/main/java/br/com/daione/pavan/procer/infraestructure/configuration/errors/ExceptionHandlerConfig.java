@@ -1,4 +1,4 @@
-package br.com.daione.pavan.procer.people.infraestructure.configuration.errors;
+package br.com.daione.pavan.procer.infraestructure.configuration.errors;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;

@@ -1,8 +1,8 @@
-package br.com.daione.pavan.procer.people.business.converter;
+package br.com.daione.pavan.procer.business.converter;
 
-import br.com.daione.pavan.procer.people.api.request.PeopleRequest;
-import br.com.daione.pavan.procer.people.api.response.PeopleResponse;
-import br.com.daione.pavan.procer.people.infraestructure.entity.PeopleEntity;
+import br.com.daione.pavan.procer.api.request.PeopleRequest;
+import br.com.daione.pavan.procer.api.response.PeopleResponse;
+import br.com.daione.pavan.procer.infraestructure.entity.PeopleEntity;
 
 public abstract class PeopleConverter {
 

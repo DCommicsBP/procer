@@ -1,11 +1,11 @@
 package br.com.daione.pavan.procer.people.api;
 
 import br.com.daione.pavan.procer.data.PeopleData;
-import br.com.daione.pavan.procer.people.api.request.PeopleRequest;
-import br.com.daione.pavan.procer.people.api.response.PeopleResponse;
-import br.com.daione.pavan.procer.people.business.converter.PeopleConverter;
-import br.com.daione.pavan.procer.people.business.service.PeopleService;
-import br.com.daione.pavan.procer.people.infraestructure.entity.PeopleEntity;
+import br.com.daione.pavan.procer.api.request.PeopleRequest;
+import br.com.daione.pavan.procer.api.response.PeopleResponse;
+import br.com.daione.pavan.procer.business.converter.PeopleConverter;
+import br.com.daione.pavan.procer.business.service.PeopleService;
+import br.com.daione.pavan.procer.infraestructure.entity.PeopleEntity;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

@@ -1,8 +1,8 @@
-package br.com.daione.pavan.procer.people.api;
+package br.com.daione.pavan.procer.api;
 
-import br.com.daione.pavan.procer.people.api.request.PeopleRequest;
-import br.com.daione.pavan.procer.people.api.response.PeopleResponse;
-import br.com.daione.pavan.procer.people.business.service.PeopleService;
+import br.com.daione.pavan.procer.api.request.PeopleRequest;
+import br.com.daione.pavan.procer.api.response.PeopleResponse;
+import br.com.daione.pavan.procer.business.service.PeopleService;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;

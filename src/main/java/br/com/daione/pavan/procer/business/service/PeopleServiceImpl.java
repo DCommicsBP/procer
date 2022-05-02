@@ -1,10 +1,10 @@
-package br.com.daione.pavan.procer.people.business.service;
+package br.com.daione.pavan.procer.business.service;
 
-import br.com.daione.pavan.procer.people.api.request.PeopleRequest;
-import br.com.daione.pavan.procer.people.api.response.PeopleResponse;
-import br.com.daione.pavan.procer.people.business.converter.PeopleConverter;
-import br.com.daione.pavan.procer.people.infraestructure.entity.PeopleEntity;
-import br.com.daione.pavan.procer.people.infraestructure.repository.PeopleRepository;
+import br.com.daione.pavan.procer.api.request.PeopleRequest;
+import br.com.daione.pavan.procer.infraestructure.entity.PeopleEntity;
+import br.com.daione.pavan.procer.api.response.PeopleResponse;
+import br.com.daione.pavan.procer.business.converter.PeopleConverter;
+import br.com.daione.pavan.procer.infraestructure.repository.PeopleRepository;
 import lombok.AllArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

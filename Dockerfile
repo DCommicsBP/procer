@@ -11,6 +11,6 @@ COPY build/libs/procer-0.0.1-SNAPSHOT.jar $PROJECT_HOME/procer-0.0.1-SNAPSHOT.ja
 
 WORKDIR $PROJECT_HOME
 
-EXPOSE 8080
+EXPOSE  8080
 CMD ["java", "-jar", "./procer-0.0.1-SNAPSHOT.jar"]
 

@@ -1,4 +1,4 @@
-package br.com.daione.pavan.procer.people.api.request;
+package br.com.daione.pavan.procer.api.request;
 
 import lombok.*;
 

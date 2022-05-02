@@ -1,4 +1,4 @@
-package br.com.daione.pavan.procer.people.infraestructure.configuration;
+package br.com.daione.pavan.procer.infraestructure.configuration;
 
 import io.r2dbc.spi.Connection;
 import io.r2dbc.spi.ConnectionFactory;

@@ -1,4 +1,4 @@
-package br.com.daione.pavan.procer.people.infraestructure.entity;
+package br.com.daione.pavan.procer.infraestructure.entity;
 
 
 import lombok.*;

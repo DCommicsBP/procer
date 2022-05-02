@@ -1,6 +1,6 @@
-package br.com.daione.pavan.procer.people.infraestructure.repository;
+package br.com.daione.pavan.procer.infraestructure.repository;
 
-import br.com.daione.pavan.procer.people.infraestructure.entity.PeopleEntity;
+import br.com.daione.pavan.procer.infraestructure.entity.PeopleEntity;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;
 import org.springframework.stereotype.Repository;
