@@ -1,6 +1,6 @@
-##Ficha Técnica do projeto
+## Ficha Técnica do projeto
 
-###Tecnologias utilizadas no processo de desenvolvimento:
+### Tecnologias utilizadas no processo de desenvolvimento:
     1. Docker: para a criação de imagens e containers
 
     2. PostgresSQL: banco de dados relacional
@@ -9,14 +9,14 @@
 
     4. Gradle: sistema de automação de compilação
     
-####Tecnologias utilizadas na codificação da aplicação
+#### Tecnologias utilizadas na codificação da aplicação
     1. OpenJDK 11
 
     2. Spring Webflux
 
     3. R2DBC: para viabilizar o uso de um banco de dados relacional através de uma API reativa.
 
-##Breve descrição do que o usuário vai encontrar ao abrir o código fonte.
+## Breve descrição do que o usuário vai encontrar ao abrir o código fonte.
 
 
 1. Os endpoints principais que fazem parte das operações de CRUD, foram todos expostos na Controler utilizada para gerenciar o fluxo de dados da entidade ‘People’. Porém, outros serviços foram criados, mas não expostos.
